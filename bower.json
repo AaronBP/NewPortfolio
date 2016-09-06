@@ -1,0 +1,17 @@
+{
+  "name": "new-portfolio",
+  "authors": [
+    "AaronBP <aaron.phillips96@icloud.com>"
+  ],
+  "description": "My upgraded portfolio website",
+  "main": "",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
