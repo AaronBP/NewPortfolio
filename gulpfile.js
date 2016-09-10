@@ -1,5 +1,5 @@
 'use strict';
- 
+
 // ////////////////////////////
 // Require modules
 // ////////////////////////////
@@ -11,14 +11,14 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
     sass = require('gulp-sass');
- 
+
 // ////////////////////////////
 // Sass Tasks
 // ////////////////////////////
 
 gulp.task('sass', function(){
-    return gulp.src('./sass/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
+    return gulp.src('./sass/**/*.sass')
+        .pipe(sass({indentedSyntax: true}).on('error', sass.logError))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(gulp.dest('./public/css'))
         .pipe(reload({stream: true}));
@@ -34,14 +34,6 @@ gulp.task('jade', function(){
         pretty: true
     }))
     .pipe(gulp.dest('./public/html'));
-
-    // gulp.src('./public/html/index.html')
-    // .pipe(fileInclude({
-    //     prefix: '@@',
-    //     basepath: '@file'
-    // }))
-    // .pipe(gulp.dest('./'))
-    // .pipe(reload({stream: true}));
 });
 
 // ////////////////////////////
@@ -75,7 +67,7 @@ gulp.task('browser-sync', function(){
 // ////////////////////////////
 
 gulp.task('watch', function(){
-    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch('./sass/**/*.sass', ['sass']);
     gulp.watch('./jade/**/*.jade', ['jade']);
     gulp.watch('./public/html/**/*.html', ['file-include']);
 });
