@@ -70,6 +70,7 @@ gulp.task('watch', function(){
     gulp.watch('./sass/**/*.sass', ['sass']);
     gulp.watch('./jade/**/*.jade', ['jade']);
     gulp.watch('./public/html/**/*.html', ['file-include']);
+    gulp.watch('./public/js/**/*.js', ['file-include']);
 });
 
 // ////////////////////////////
