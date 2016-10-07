@@ -2,7 +2,7 @@ $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
 
   $('.header-title').css({
-    'transform': 'translate(0px, -' + wScroll / 5 + '%)'
+    'transform': 'translate(0px, ' + wScroll / 10 + '%)'
   });
 
   $('.header-bird').css({

@@ -8,6 +8,23 @@ body
   margin: 0px
   font-family: $gen-font
 
+button
+  border: 1.5px solid $highlight-color
+  color: $highlight-color
+  background-color: transparent
+  padding: 15px 50px
+  border-radius: 3px
+  margin: 20px auto
+  font-size: 20px
+  display: block
+  &:hover
+    background-color: $complement-color
+    color: white
+    border-color: white
+a
+  text-decoration: none
+
+
 // Header section
 header
   background-image: url('../images/in-nature.jpg')
@@ -16,6 +33,7 @@ header
   width: 100%
   height: 600px
   position: relative
+  overflow: hidden
 
   // AP logo
   .logo
@@ -48,6 +66,7 @@ header
     top: 25%
     left: 68%
 
+// Skills section
 .skills-container
   height: auto
   width: auto
@@ -64,7 +83,7 @@ header
     text-align: center
 
   .skills-about
-    margin-top: 20px
+    margin-top: 40px
     text-align: justify
     display: inline-block
     width: 45%
@@ -75,18 +94,6 @@ header
   .hire
     text-align: center
 
-  button
-    border: 1px solid $highlight-color
-    color: $highlight-color
-    background-color: white
-    padding: 15px 50px
-    border-radius: 3px
-    margin: 20px auto
-    font-size: 20px
-    &:hover
-      background-color: $complement-color
-      color: $highlight-color
-      border-color: $highlight-color
   .bounce
     animation: bounce 1s ease-in-out 1
     animation-delay: 6s
@@ -207,3 +214,51 @@ header
       width: 0%
     100%
       width: 62%
+
+
+.social-container
+  width: auto
+  height: 600px
+  background: url('../images/social-background.jpg') no-repeat
+  background-size: cover
+  padding: 30px
+
+  .social-info
+    width: 60%
+    margin: 300px auto
+    text-align: center
+    font-size: 29px
+    transform: translateY(-50%)
+    p
+      margin-bottom: 50px
+
+
+footer
+  background-color: rgb(50,50,50)
+  margin: 0
+  padding: 30px
+  a
+    color: $highlight-color
+  ul
+    padding: 0
+    list-style-type: none
+    width: 25%
+    text-align: center
+    display: inline-block
+  li
+    display: inline-block
+    margin: 20px
+
+  .qoute-wrap
+    font-size: 18px
+    width: 50%
+    text-align: center
+    display: inline-block
+    color: rgb(200,200,200)
+
+  .side-note
+    width: 20%
+    color: rgb(200,200,200)
+    display: inline-block
+    font-size: 12px
+    text-align: right
