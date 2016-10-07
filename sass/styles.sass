@@ -1,6 +1,6 @@
-$text-color: #333333
-$unhighlight-text: #999
-$nav-font: 'Quicksand', sans-serif
+$highlight-color: rgba(255, 55, 0, 1)
+$complement-color: rgba(255, 55, 0, 0.4)
+$highlight-font: 'Quicksand', sans-serif
 $gen-font: 'Raleway', sans-serif
 
 // Geral page set-up
@@ -28,30 +28,6 @@ header
     width: 50px
     height: 50px
 
-  // Navigation bar
-  nav
-    display: flex
-    width: 600px
-    position: absolute
-    top: 30px
-    right: 30px
-    font-size: 19px
-    font-family: $nav-font
-
-    .nav-item
-      width: 25%
-      text-align: center
-
-    .active
-      color: $text-color
-
-    a
-      text-decoration: none
-      color: $unhighlight-text
-
-    a:hover
-      color: $text-color
-
   // Aaron Phillips title
   .header-title
     margin: 0 auto
@@ -59,10 +35,8 @@ header
     height: 250px
     background-image: url('../images/AaronPhillips.png')
     position: absolute
-    // Center image vertically
     top: 50%
     margin-top: -125px
-    // Center image horizontally
     left: 50%
     margin-left: -300px
 
@@ -73,3 +47,163 @@ header
     position: absolute
     top: 25%
     left: 68%
+
+.skills-container
+  height: auto
+  width: auto
+  padding: 60px
+
+  .skills-wrap
+    width: 75%
+    margin: 0 auto
+    height: auto
+
+  .skills-header
+    font-family: $highlight-font
+    font-size: 45px
+    text-align: center
+
+  .skills-about
+    margin-top: 20px
+    text-align: justify
+    display: inline-block
+    width: 45%
+    line-height: 1.8em
+    letter-spacing: 0.7px
+    vertical-align: top
+
+  .hire
+    text-align: center
+
+  button
+    border: 1px solid $highlight-color
+    color: $highlight-color
+    background-color: white
+    padding: 15px 50px
+    border-radius: 3px
+    margin: 20px auto
+    font-size: 20px
+    &:hover
+      background-color: $complement-color
+      color: $highlight-color
+      border-color: $highlight-color
+  .bounce
+    animation: bounce 1s ease-in-out 1
+    animation-delay: 6s
+  @keyframes bounce
+    0%
+      transform: translate(0, 0)
+    15%
+      transform: translate(0, 0)
+    20%
+      transform: translateX(-5px)
+    30%
+      transform: translateX(5px)
+    35%
+      transform: translate(0, 0)
+    60%
+      transform: translate(0, 0)
+    65%
+      transform: translateX(-5px)
+    75%
+      transform: translateX(5px)
+    80%
+      transform: translate(0, 0)
+    100%
+      transform: translate(0, 0)
+
+
+  .skills
+    width: 50%
+    display: inline-block
+
+  .label
+    margin-top: 20px
+    margin-bottom: 5px
+
+  /*************START EXTENDING*****************/
+
+  .extend
+    background-color: rgba(160,160,160,0.8)
+    height: 20px
+    width: 0
+    animation-fill-mode: forwards
+    animation-duration: 2s
+    border-right: 80px solid rgb(100,100,100)
+
+  //HTML animate
+  .html-extend
+    animation-name: extendht
+    animation-delay: 1.5s
+
+  @keyframes extendht
+    0%
+      width: 0%
+    100%
+      width: 72%
+
+  // Css extend
+  .css-extend
+    animation-name: extendcss
+    animation-delay: 2s
+
+  @keyframes extendcss
+    0%
+      width: 0%
+    100%
+      width: 76%
+
+  // jquery extend
+  .jquery-extend
+    animation-name: extendjquery
+    animation-delay: 2.5s
+
+  @keyframes extendjquery
+    0%
+      width: 0%
+    100%
+      width: 65%
+
+  // angular extend
+  .angular-extend
+    animation-name: extendangular
+    animation-delay: 3s
+
+  @keyframes extendangular
+    0%
+      width: 0%
+    100%
+      width: 48%
+
+  // node extend
+  .node-extend
+    animation-name: extendnode
+    animation-delay: 3.5s
+
+  @keyframes extendnode
+    0%
+      width: 0%
+    100%
+      width: 68%
+
+  // ps extend
+  .ps-extend
+    animation-name: extendps
+    animation-delay: 4s
+
+  @keyframes extendps
+    0%
+      width: 0%
+    100%
+      width: 56%
+
+  // gulp extend
+  .gulp-extend
+    animation-name: extendgulp
+    animation-delay: 4.5s
+
+  @keyframes extendgulp
+    0%
+      width: 0%
+    100%
+      width: 62%

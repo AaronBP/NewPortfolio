@@ -18,25 +18,6 @@ header {
     left: 25px;
     width: 50px;
     height: 50px; }
-  header nav {
-    display: -ms-flexbox;
-    display: flex;
-    width: 600px;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    font-size: 19px;
-    font-family: "Quicksand", sans-serif; }
-    header nav .nav-item {
-      width: 25%;
-      text-align: center; }
-    header nav .active {
-      color: #333333; }
-    header nav a {
-      text-decoration: none;
-      color: #999; }
-    header nav a:hover {
-      color: #333333; }
   header .header-title {
     margin: 0 auto;
     width: 600px;
@@ -54,3 +35,140 @@ header {
     position: absolute;
     top: 25%;
     left: 68%; }
+
+.skills-container {
+  height: auto;
+  width: auto;
+  padding: 60px;
+  /*************START EXTENDING*****************/ }
+  .skills-container .skills-wrap {
+    width: 75%;
+    margin: 0 auto;
+    height: auto; }
+  .skills-container .skills-header {
+    font-family: "Quicksand", sans-serif;
+    font-size: 45px;
+    text-align: center; }
+  .skills-container .skills-about {
+    margin-top: 20px;
+    text-align: justify;
+    display: inline-block;
+    width: 45%;
+    line-height: 1.8em;
+    letter-spacing: 0.7px;
+    vertical-align: top; }
+  .skills-container .hire {
+    text-align: center; }
+  .skills-container button {
+    border: 1px solid #ff3700;
+    color: #ff3700;
+    background-color: white;
+    padding: 15px 50px;
+    border-radius: 3px;
+    margin: 20px auto;
+    font-size: 20px; }
+    .skills-container button:hover {
+      background-color: rgba(255, 55, 0, 0.4);
+      color: #ff3700;
+      border-color: #ff3700; }
+  .skills-container .bounce {
+    animation: bounce 1s ease-in-out 1;
+    animation-delay: 6s; }
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0); }
+  15% {
+    transform: translate(0, 0); }
+  20% {
+    transform: translateX(-5px); }
+  30% {
+    transform: translateX(5px); }
+  35% {
+    transform: translate(0, 0); }
+  60% {
+    transform: translate(0, 0); }
+  65% {
+    transform: translateX(-5px); }
+  75% {
+    transform: translateX(5px); }
+  80% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(0, 0); } }
+  .skills-container .skills {
+    width: 50%;
+    display: inline-block; }
+  .skills-container .label {
+    margin-top: 20px;
+    margin-bottom: 5px; }
+  .skills-container .extend {
+    background-color: rgba(160, 160, 160, 0.8);
+    height: 20px;
+    width: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    border-right: 80px solid #646464; }
+  .skills-container .html-extend {
+    animation-name: extendht;
+    animation-delay: 1.5s; }
+
+@keyframes extendht {
+  0% {
+    width: 0%; }
+  100% {
+    width: 72%; } }
+  .skills-container .css-extend {
+    animation-name: extendcss;
+    animation-delay: 2s; }
+
+@keyframes extendcss {
+  0% {
+    width: 0%; }
+  100% {
+    width: 76%; } }
+  .skills-container .jquery-extend {
+    animation-name: extendjquery;
+    animation-delay: 2.5s; }
+
+@keyframes extendjquery {
+  0% {
+    width: 0%; }
+  100% {
+    width: 65%; } }
+  .skills-container .angular-extend {
+    animation-name: extendangular;
+    animation-delay: 3s; }
+
+@keyframes extendangular {
+  0% {
+    width: 0%; }
+  100% {
+    width: 48%; } }
+  .skills-container .node-extend {
+    animation-name: extendnode;
+    animation-delay: 3.5s; }
+
+@keyframes extendnode {
+  0% {
+    width: 0%; }
+  100% {
+    width: 68%; } }
+  .skills-container .ps-extend {
+    animation-name: extendps;
+    animation-delay: 4s; }
+
+@keyframes extendps {
+  0% {
+    width: 0%; }
+  100% {
+    width: 56%; } }
+  .skills-container .gulp-extend {
+    animation-name: extendgulp;
+    animation-delay: 4.5s; }
+
+@keyframes extendgulp {
+  0% {
+    width: 0%; }
+  100% {
+    width: 62%; } }
